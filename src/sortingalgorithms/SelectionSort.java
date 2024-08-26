@@ -1,3 +1,4 @@
+package src.sortingalgorithms;
 public class SelectionSort {
     public static void selectionSort(int[] array) {
         int n = array.length;

@@ -1,3 +1,4 @@
+package src.sortingalgorithms;
 public class InsertionSort {
     public static void insertionSort(int[] array) {
         int n = array.length;

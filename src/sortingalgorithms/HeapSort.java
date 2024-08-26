@@ -1,3 +1,4 @@
+package src.sortingalgorithms;
 public class HeapSort {
     public static void heapSort(int[] array) {
         int n = array.length;

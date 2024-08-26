@@ -1,3 +1,4 @@
+package src.sortingalgorithms;
 public class BubbleSort {
     public static void bubbleSort(int[] array) {
         int n = array.length;

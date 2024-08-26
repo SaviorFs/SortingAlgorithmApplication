@@ -1,3 +1,4 @@
+package src.sortingalgorithms;
 public class MergeSort {
     public static void mergeSort(int[] array, int left, int right) {
         if (left < right) {
