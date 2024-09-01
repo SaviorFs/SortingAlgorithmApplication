@@ -1,4 +1,4 @@
-package src; 
+package src;
 
 public class CustomObject implements Comparable<CustomObject> {
     private String name;

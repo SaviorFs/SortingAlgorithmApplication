@@ -1,6 +1,6 @@
 package src;
 
-import src.sortingalgorithms.*; // Import sorting algorithms from the sortingalgorithms package
+import src.sortingalgorithms.*; 
 import java.util.Arrays;
 import java.util.Random;
 
@@ -79,7 +79,7 @@ public class SortingAlgorithmApplication {
         SelectionSort.selectionSort(selectionSorted);
         System.out.println("SelectionSort: " + Arrays.toString(selectionSorted));
 
-        // RadixSort does not work with String[] directly in this setup
+        // RadixSort does not work with string this way maybe change it later
     }
 
     public static void runObjectSorts(CustomObject[] data) {
@@ -109,7 +109,7 @@ public class SortingAlgorithmApplication {
         SelectionSort.selectionSort(selectionSorted);
         System.out.println("SelectionSort: " + Arrays.toString(selectionSorted));
 
-        // RadixSort does not work with CustomObject[] directly in this setup
+        // RadixSort does not work with CustomObject[] this way maybe change it later
     }
 
     private static CustomObject[] createRandomObjects(int size) {
