@@ -8,8 +8,11 @@ public class RadixSort {
     // Radix Sort for integers
     public static void radixSort(int[] array) {
         int max = getMax(array);
-        for (int exp = 1; max / exp > 0; exp *= 10) {
-            countingSort(array, exp);
+        int min = getMin(array);
+        int range = max - min + 1; // to handle negative numbers
+
+        for (int exp = 1; (max - min) / exp > 0; exp *= 10) {
+            countingSort(array, exp, min, range);
         }
     }
 
@@ -29,23 +32,25 @@ public class RadixSort {
         }
     }
 
-    private static void countingSort(int[] array, int exp) {
+    private static void countingSort(int[] array, int exp, int min, int range) {
         int n = array.length;
         int[] output = new int[n];
-        int[] count = new int[10];
+        int[] count = new int[range];
 
         Arrays.fill(count, 0);
         for (int i = 0; i < n; i++) {
-            count[(array[i] / exp) % 10]++;
+            int index = ((array[i] - min) / exp) % 10;
+            count[index]++;
         }
 
-        for (int i = 1; i < 10; i++) {
+        for (int i = 1; i < range; i++) {
             count[i] += count[i - 1];
         }
 
         for (int i = n - 1; i >= 0; i--) {
-            output[count[(array[i] / exp) % 10] - 1] = array[i];
-            count[(array[i] / exp) % 10]--;
+            int index = ((array[i] - min) / exp) % 10;
+            output[count[index] - 1] = array[i];
+            count[index]--;
         }
 
         System.arraycopy(output, 0, array, 0, n);
@@ -101,6 +106,10 @@ public class RadixSort {
 
     private static int getMax(int[] array) {
         return Arrays.stream(array).max().getAsInt();
+    }
+
+    private static int getMin(int[] array) {
+        return Arrays.stream(array).min().getAsInt();
     }
 
     private static int getMaxStringLength(String[] array) {

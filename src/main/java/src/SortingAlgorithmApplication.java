@@ -1,23 +1,29 @@
 package src;
 
 import java.util.Arrays;
-import java.util.Random;
 import src.sortingalgorithms.*;
 
 public class SortingAlgorithmApplication {
 
     public static void main(String[] args) {
-        // Test with Integer data
-        int[] intData = {64, 34, 25, 12, 22, 11, 90};
-        runIntSorts(intData);
-
-        // Test with String data
-        String[] stringData = {"apple", "orange", "banana", "grape", "peach"};
-        runStringSorts(stringData);
-
-        // Test with Object data
-        CustomObject[] objectData = createRandomObjects(10);
-        runObjectSorts(objectData);
+        // Testing with various data sizes
+        int[] dataSizes = {1, 10, 100, 1024, 10240, 102400}; // in KB (1KB to 100MB)
+        
+        for (int size : dataSizes) {
+            System.out.println("Testing with data size: " + size + "KB");
+            
+            // Integer data
+            int[] intData = DataGenerator.generateIntData(size);
+            runIntSorts(intData);
+            
+            // String data
+            String[] stringData = DataGenerator.generateStringData(size);
+            runStringSorts(stringData);
+            
+            // CustomObject data
+            CustomObject[] objectData = DataGenerator.generateCustomObjectData(size);
+            runObjectSorts(objectData);
+        }
     }
 
     public static void runIntSorts(int[] data) {
@@ -114,18 +120,5 @@ public class SortingAlgorithmApplication {
         CustomObject[] radixSorted = data.clone();
         RadixSort.radixSort(radixSorted);
         System.out.println("RadixSort: " + Arrays.toString(radixSorted));
-    }
-
-    private static CustomObject[] createRandomObjects(int size) {
-        Random random = new Random();
-        CustomObject[] objects = new CustomObject[size];
-        for (int i = 0; i < size; i++) {
-            objects[i] = new CustomObject(
-                "Name" + i,
-                random.nextInt(100),
-                random.nextDouble() * 100
-            );
-        }
-        return objects;
     }
 }

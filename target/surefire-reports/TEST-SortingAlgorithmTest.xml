@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="SortingAlgorithmTest" time="0.077" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="SortingAlgorithmTest" time="0.122" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\John\OneDrive\Documents\GitHub\SortingAlgoProject\target\test-classes;C:\Users\John\OneDrive\Documents\GitHub\SortingAlgoProject\target\classes;C:\Users\John\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\John\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\John\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\John\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\John\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\John\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;"/>
+    <property name="java.class.path" value="C:\Users\John\OneDrive\Documents\GitHub\SortingAlgoProject\target\test-classes;C:\Users\John\OneDrive\Documents\GitHub\SortingAlgoProject\target\classes;C:\Users\John\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\John\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\John\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\John\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\John\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.0\junit-platform-launcher-1.10.0.jar;C:\Users\John\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\John\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\John\.m2\repository\org\assertj\assertj-core\3.21.0\assertj-core-3.21.0.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.22.7-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\John\AppData\Local\Temp\surefire17940919411252179192\surefirebooter-20240901064221872_3.jar C:\Users\John\AppData\Local\Temp\surefire17940919411252179192 2024-09-01T06-42-21_559-jvmRun1 surefire-20240901064221872_1tmp surefire_0-20240901064221872_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\John\AppData\Local\Temp\surefire12181057590995600873\surefirebooter-20240901224450086_3.jar C:\Users\John\AppData\Local\Temp\surefire12181057590995600873 2024-09-01T22-44-49_776-jvmRun1 surefire-20240901224450086_1tmp surefire_0-20240901224450086_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\John\OneDrive\Documents\GitHub\SortingAlgoProject\target\test-classes;C:\Users\John\OneDrive\Documents\GitHub\SortingAlgoProject\target\classes;C:\Users\John\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\John\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\John\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\John\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\John\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\John\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\John\OneDrive\Documents\GitHub\SortingAlgoProject\target\test-classes;C:\Users\John\OneDrive\Documents\GitHub\SortingAlgoProject\target\classes;C:\Users\John\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\John\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\John\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\John\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\John\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.0\junit-platform-launcher-1.10.0.jar;C:\Users\John\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\John\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\John\.m2\repository\org\assertj\assertj-core\3.21.0\assertj-core-3.21.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\John"/>
     <property name="user.language" value="en"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\John\AppData\Local\Temp\surefire17940919411252179192\surefirebooter-20240901064221872_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\John\AppData\Local\Temp\surefire12181057590995600873\surefirebooter-20240901224450086_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.22+7"/>
@@ -61,13 +61,40 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testMergeSort" classname="SortingAlgorithmTest" time="0.031"/>
-  <testcase name="testSelectionSort" classname="SortingAlgorithmTest" time="0.003"/>
-  <testcase name="testBubbleSort" classname="SortingAlgorithmTest" time="0.002"/>
-  <testcase name="testHeapSort" classname="SortingAlgorithmTest" time="0.001"/>
-  <testcase name="testRadixSortInt" classname="SortingAlgorithmTest" time="0.002"/>
-  <testcase name="testRadixSortString" classname="SortingAlgorithmTest" time="0.002"/>
-  <testcase name="testRadixSortCustomObject" classname="SortingAlgorithmTest" time="0.001"/>
-  <testcase name="testInsertionSort" classname="SortingAlgorithmTest" time="0.001"/>
-  <testcase name="testQuickSort" classname="SortingAlgorithmTest" time="0.002"/>
+  <testcase name="testMergeSort" classname="SortingAlgorithmTest" time="0.052">
+    <system-out><![CDATA[MergeSort average time: 86510 nanoseconds
+]]></system-out>
+  </testcase>
+  <testcase name="testSelectionSort" classname="SortingAlgorithmTest" time="0.002">
+    <system-out><![CDATA[SelectionSort average time: 58750 nanoseconds
+]]></system-out>
+  </testcase>
+  <testcase name="testBubbleSort" classname="SortingAlgorithmTest" time="0.003">
+    <system-out><![CDATA[BubbleSort average time: 86450 nanoseconds
+]]></system-out>
+  </testcase>
+  <testcase name="testHeapSort" classname="SortingAlgorithmTest" time="0.002">
+    <system-out><![CDATA[HeapSort average time: 80310 nanoseconds
+]]></system-out>
+  </testcase>
+  <testcase name="testRadixSortInt" classname="SortingAlgorithmTest" time="0.004">
+    <system-out><![CDATA[RadixSort (int) average time: 298680 nanoseconds
+]]></system-out>
+  </testcase>
+  <testcase name="testRadixSortString" classname="SortingAlgorithmTest" time="0.002">
+    <system-out><![CDATA[RadixSort (string) average time: 115570 nanoseconds
+]]></system-out>
+  </testcase>
+  <testcase name="testRadixSortCustomObject" classname="SortingAlgorithmTest" time="0.003">
+    <system-out><![CDATA[RadixSort (CustomObject) average time: 51980 nanoseconds
+]]></system-out>
+  </testcase>
+  <testcase name="testInsertionSort" classname="SortingAlgorithmTest" time="0.005">
+    <system-out><![CDATA[InsertionSort average time: 85790 nanoseconds
+]]></system-out>
+  </testcase>
+  <testcase name="testQuickSort" classname="SortingAlgorithmTest" time="0.006">
+    <system-out><![CDATA[QuickSort average time: 98370 nanoseconds
+]]></system-out>
+  </testcase>
 </testsuite>
