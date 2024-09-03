@@ -1,5 +1,7 @@
 package src.sortingalgorithms;
+
 import src.CustomObject;
+
 public class SelectionSort {
     public static void selectionSort(int[] array) {
         int n = array.length;
@@ -10,7 +12,9 @@ public class SelectionSort {
                     minIndex = j;
                 }
             }
-            swap(array, i, minIndex);
+            if (minIndex != i) {
+                swap(array, i, minIndex);
+            }
         }
     }
 
@@ -23,7 +27,9 @@ public class SelectionSort {
                     minIndex = j;
                 }
             }
-            swap(array, i, minIndex);
+            if (minIndex != i) {
+                swap(array, i, minIndex);
+            }
         }
     }
 
@@ -36,7 +42,9 @@ public class SelectionSort {
                     minIndex = j;
                 }
             }
-            swap(array, i, minIndex);
+            if (minIndex != i) {
+                swap(array, i, minIndex);
+            }
         }
     }
 

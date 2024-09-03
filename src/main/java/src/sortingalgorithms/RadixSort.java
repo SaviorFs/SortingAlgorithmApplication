@@ -59,7 +59,7 @@ public class RadixSort {
     private static void countingSortByCharacter(String[] array, int position) {
         int n = array.length;
         String[] output = new String[n];
-        int[] count = new int[256]; 
+        int[] count = new int[256]; // 256 for extended ASCII
 
         Arrays.fill(count, 0);
         for (String s : array) {

@@ -1,0 +1,10 @@
+src\sortingalgorithms\InsertionSort.class
+src\sortingalgorithms\MergeSort.class
+src\sortingalgorithms\QuickSort.class
+src\CustomObject.class
+src\sortingalgorithms\SelectionSort.class
+src\sortingalgorithms\RadixSort.class
+src\SortingAlgorithmApplication.class
+src\sortingalgorithms\HeapSort.class
+src\DataGenerator.class
+src\sortingalgorithms\BubbleSort.class

@@ -1,6 +1,10 @@
 package src.sortingalgorithms;
+
 import src.CustomObject;
+
 public class QuickSort {
+
+    // Quick Sort for integers
     public static void quickSort(int[] array, int low, int high) {
         if (low < high) {
             int pi = partition(array, low, high);
@@ -9,6 +13,7 @@ public class QuickSort {
         }
     }
 
+    // Quick Sort for strings
     public static void quickSort(String[] array, int low, int high) {
         if (low < high) {
             int pi = partition(array, low, high);
@@ -17,6 +22,7 @@ public class QuickSort {
         }
     }
 
+    // Quick Sort for CustomObject array
     public static void quickSort(CustomObject[] array, int low, int high) {
         if (low < high) {
             int pi = partition(array, low, high);
@@ -25,6 +31,7 @@ public class QuickSort {
         }
     }
 
+    // Partition method for integers
     private static int partition(int[] array, int low, int high) {
         int pivot = array[high];
         int i = (low - 1);
@@ -38,6 +45,7 @@ public class QuickSort {
         return i + 1;
     }
 
+    // Partition method for strings
     private static int partition(String[] array, int low, int high) {
         String pivot = array[high];
         int i = (low - 1);
@@ -51,6 +59,7 @@ public class QuickSort {
         return i + 1;
     }
 
+    // Partition method for CustomObject array
     private static int partition(CustomObject[] array, int low, int high) {
         CustomObject pivot = array[high];
         int i = (low - 1);
@@ -64,18 +73,21 @@ public class QuickSort {
         return i + 1;
     }
 
+    // Swap method for integers
     private static void swap(int[] array, int i, int j) {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
 
+    // Swap method for strings
     private static void swap(String[] array, int i, int j) {
         String temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
 
+    // Swap method for CustomObject array
     private static void swap(CustomObject[] array, int i, int j) {
         CustomObject temp = array[i];
         array[i] = array[j];
