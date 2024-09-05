@@ -1,5 +1,6 @@
 package src;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class DataGenerator {
@@ -8,7 +9,7 @@ public class DataGenerator {
 
     public static int[] generateIntData(int sizeInKB) {
         int numberOfIntegers = (sizeInKB * 1024) / Integer.BYTES;
-        Random random = new Random();
+        Random random = new SecureRandom();
         int[] data = new int[numberOfIntegers];
         for (int i = 0; i < numberOfIntegers; i++) {
             data[i] = random.nextInt();
@@ -18,7 +19,7 @@ public class DataGenerator {
 
     public static String[] generateStringData(int sizeInKB) {
         int numberOfStrings = (sizeInKB * 1024) / 10; 
-        Random random = new Random();
+        Random random = new SecureRandom();
         String[] data = new String[numberOfStrings];
         for (int i = 0; i < numberOfStrings; i++) {
             data[i] = generateRandomString(random, 10);
@@ -28,7 +29,7 @@ public class DataGenerator {
 
     public static CustomObject[] generateCustomObjectData(int sizeInKB) {
         int numberOfObjects = (sizeInKB * 1024) / 32; 
-        Random random = new Random();
+        Random random = new SecureRandom();
         CustomObject[] data = new CustomObject[numberOfObjects];
         for (int i = 0; i < numberOfObjects; i++) {
             data[i] = new CustomObject(
